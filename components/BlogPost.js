@@ -8,6 +8,8 @@ const POSTS = ["hello-world", "sup-world", "at-worlds-end"]
 export default function BlogPost({ version }) {
 	const { query, replace } = useRouter()
 
+	console.log("query", query)
+
 	// const onClick = (e) => {
 	// 	e.preventDefault()
 
