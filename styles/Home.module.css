@@ -1,0 +1,11 @@
+.container {
+  padding: 0 2rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 30rem;
+  margin-bottom: 10rem;
+}
