@@ -6,23 +6,9 @@ import { useRouter } from "next/router"
 const POSTS = ["hello-world", "sup-world", "at-worlds-end"]
 
 export default function BlogPost({ version }) {
-	const { query, replace } = useRouter()
+	const { query } = useRouter()
 
 	console.log("query", query)
-
-	// const onClick = (e) => {
-	// 	e.preventDefault()
-
-	// 	const internalUrl = e.target.pathname.replace("/page", "/new-page")
-
-	// 	replace(internalUrl, null, {
-	// 		shallow: true,
-	// 	})
-
-	// 	requestAnimationFrame(() => {
-	// 		history.replaceState({ test: "123" }, null, e.target.pathname)
-	// 	})
-	// }
 
 	return (
 		<div className={styles.container}>
@@ -39,8 +25,7 @@ export default function BlogPost({ version }) {
 							scroll={false}
 							shallow={true}
 						>
-							<a>{slug}</a>
-							{/* <a onClick={onClick}>{slug}</a> */}
+							{slug}
 						</Link>
 					)
 				})}
